@@ -28,15 +28,16 @@ const MovieCard = ({ el ,movie, handleDelete }) => {
         </div>
       </Card.Body>
           <div className='playdel'>
-          <i id='i'class="far fa-trash-alt fa-2x  " onClick={()=>handleDelete(el.id)}></i> 
-         { <Link to={`/More/${el.title}`}>  }
-         <i id='e' class="far fa-credit-card fa-2x" ></i>
-           { </Link>  }
+          <i id='i' class="far fa-trash-alt fa-2x  " onClick={()=>handleDelete(el.id)}></i> 
           
+          <i id='e' class="far fa-credit-card fa-2x" ></i>
+
          
-        </Card>{" "}
+          
+           </div>
+        </Card>
       
-    </div>
+    
   );
 };
 

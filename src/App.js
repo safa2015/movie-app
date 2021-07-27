@@ -5,8 +5,7 @@ import { useState } from 'react';
 import AddMovie from './components/AddMovie'
 import MovieList from './components/MovieList';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route,  Switch } from 'react-router-dom'
-import More from './components/More';
+//import { BrowserRouter as Router, Route,  Switch } from 'react-router-dom'
 
 function App() {
   const [title,setTitle] = useState("")
@@ -197,12 +196,8 @@ function App() {
       />
      
       <AddMovie handleAdd ={handleAdd} />
-      <Router>
-        <Switch>
-          <Route path="/movielist/:id" exact render = {(props) => <More {...props} el={movieList} />
-        </Switch> 
-            </Router> 
-      <More/>
+      
+    
       <Footer/>
     </div>
   );
